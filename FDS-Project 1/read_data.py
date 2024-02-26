@@ -6,4 +6,4 @@ def read_datas(x):
     df["Date"] = pd.to_datetime(df["Date"])
     df = df.drop(columns=["Unnamed: 0"])
     df.set_index("Date", inplace=True)
-    df.head(10)
+    return df.head(10)
